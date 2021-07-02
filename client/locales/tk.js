@@ -1,5 +1,6 @@
 export default {
   homePage: 'Baş sahypa',
+  financeMonitoring: 'Maliýe gözegçiligi',
   rightsReserved: 'TDHСMB ähli haklar goragly',
   pages: 'Sahypalar',
   about: 'Biz barada',
@@ -54,4 +55,5 @@ export default {
   downloadFile: 'Faýly ýüklemek',
   import: 'Import',
   export: 'Eksport',
+  financeMonitoringText: 'Düzgünler maksatlary we wezipeleri, jenaýatçylykly ýol bilen alnan girdejileriň kanunlaşdyrylmagyna we terrorçylygyň maliýeleşdirilmegine garşy hereket etmek maksady bilen içerki gözegçiligiň talaplaryny hem-de olary amala aşyrmagyň tertibini kesgitleýär',
 }

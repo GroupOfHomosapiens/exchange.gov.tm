@@ -1,8 +1,9 @@
 export default {
   homePage: 'Главная',
+  financeMonitoring: 'Финансовый мониторинг',
   rightsReserved: 'TDHСMB все права зашишены',
   pages: 'Stranisy',
-  about: 'O nas',
+  about: 'О нас',
   legislation: 'Законодательство',
   tel: 'Тел: ',
   advertisement: 'Advertisement',
@@ -54,4 +55,5 @@ export default {
   downloadFile: 'Скачать файл',
   import: 'Import',
   export: 'Экспорт',
+  financeMonitoringText: 'Правила определяют основные цели и задачи, требования внутреннего контроля в целях противодействия легализации доходов, полученных преступным путем, и финансированию терроризма и порядок его реализации.',
 }

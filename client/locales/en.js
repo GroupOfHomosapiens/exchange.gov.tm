@@ -1,5 +1,6 @@
 export default {
   homePage: 'Home',
+  financeMonitoring: 'Financial Monitoring',
   rightsReserved: 'TDHСMB all right reserved',
   pages: 'Pages',
   about: 'About us',
@@ -54,4 +55,5 @@ export default {
   downloadFile: 'Download File',
   import: 'Import',
   export: 'Export',
+  financeMonitoringText: 'The Rules determine main objectives and tasks, internal control requirements for the purposes of anti-money laundering and financing of terrorism and procedure of its implementation.',
 }
