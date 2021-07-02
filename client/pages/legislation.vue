@@ -1,57 +1,13 @@
 <template>
-<<<<<<< HEAD
   <v-sheet 
     rounded="lg"
     class="pa-2"
   >
-   <v-row
-      no-gutters
-      class="d-flex justify-center my-1"
-    >
-      <v-col
-        cols="11"
-        sm="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="primary--text my-10"
-          align="center"
-        >
-         {{ $t('regulatoryBase') }}
-        </h3>
-
-        {{ $t('legislation1') }}
-
-      </v-col>
-
-      <v-col
-        cols="11"
-        sm="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/legislation1.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-
-    </v-row>
+    <introductory-blog 
+      :title="$t('regulatoryBase')"
+      :text="$t('legislation1')"
+      image="/legislation1.png"
+    />
 
     <div style="background-color: rgb(7,33,91)">
       <h2 class="primary--text py-10 pa-2">
@@ -114,8 +70,8 @@
       <v-row no-gutters>
         <v-col
           cols="12"
-          sm="4"
-          md="6"
+          sm="6"
+          md="4"
           v-for="(command, i) in commands"
           :key="command"
         >
@@ -244,7 +200,11 @@
 </template>
 
 <script>
+import IntroductoryBlog from '@/components/IntroductoryBlog.vue'
 export default {
+  componets: {
+    IntroductoryBlog
+  },
   data: () => ({
     texts: [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
@@ -280,45 +240,3 @@ export default {
   },
 }
 </script>
-=======
-	<section>
-		<contacts />
-		<v-text-field outlined :label="$t('pages')"></v-text-field>
-		{{ $t('pages') }}
-	</section>
-</template>
-
-<script>
-import Contacts from '@/components/Contacts.vue';
-
-export default {
-	components: {
-		Contacts, 
-	},
-	data() {
-		return {
-			engine: 'React',
-			text: '',
-			name: 'Baygeldi',
-			color: 'red'
-		}
-	},
-	computed: {
-		handleChange() {
-			return `Hello. My name is ${this.name}.` 
-		}
-	},
-	methods: {
-		handleClick() {
-			this.name = 'Shanazar'
-		}
-	}
-}
-</script>
-
-<style>
-	.btn {
-		background-color: red;
-	}
-</style>
->>>>>>> 0b24ae1aa38f7207681fc7c8943b407f91a8e2b2
