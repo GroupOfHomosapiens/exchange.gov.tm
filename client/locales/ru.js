@@ -1,4 +1,5 @@
 export default {
+  homePage: 'Главная',
   rightsReserved: 'TDHСMB все права зашишены',
   pages: 'Stranisy',
   about: 'O nas',

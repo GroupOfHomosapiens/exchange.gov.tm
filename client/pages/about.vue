@@ -3,63 +3,13 @@
     rounded="lg"
     class="pa-2"
   >
-    <v-row
-      no-gutters
-      class="d-flex justify-center align-center my-1"
-    >
-      <v-col
-        cols="11"
-        md="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="primary--text"
-          align="center"
-        >
-          {{ $t('aboutExchange') }}
-        </h3>
 
-        {{ $t('aboutText1') }}
-
-        <v-btn
-          color="primary"
-          block
-          outlined
-          class="mt-3"
-        >
-          <v-icon left>mdi-file-download-outline</v-icon>
-          {{ $t('downloadFile') }}
-        </v-btn>
-      </v-col>
-
-      <v-col
-        cols="11"
-        md="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/about1.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-
-    </v-row>
+    <introductory-blog
+      :title="$t('aboutExchange')"
+      :text="$t('aboutText1')"
+      image="/about1.png"
+      :hasFile="true"
+    />
 
     <v-row
       no-gutters
@@ -160,55 +110,11 @@
 
     </v-row>
 
-    <v-row
-      no-gutters
-      class="d-flex justify-center align-center my-5"
-    >
-
-      <v-col
-        cols="11"
-        md="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="primary--text"
-          align="center"
-        >
-          {{ $t('qualifiedSpecialists') }}
-        </h3>
-
-        {{ $t('aboutText4') }}
-      </v-col>
-
-      <v-col
-        cols="10"
-        md="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/about4.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-
-    </v-row>
-
+    <introductory-blog
+      :title="$t('qualifiedSpecialists')"
+      :text="$t('aboutText4')"
+      image="about4.png"
+    />
 
     <v-row
       no-gutters
@@ -260,60 +166,22 @@
 
     </v-row>
 
-    <v-row
-      no-gutters
-      class="d-flex justify-center align-center my-5"
-    >
-
-      <v-col
-        cols="10"
-        md="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="primary--text"
-          align="center"
-        >
-          {{ $t('exportOfProducts') }}
-        </h3>
-
-        {{ $t('aboutText6') }}
-      </v-col>
-
-      <v-col
-        cols="10"
-        md="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/about3.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-
-    </v-row>
+    <introductory-blog
+      :title="$t('exportOfProducts')"
+      :text="$t('aboutText6')"
+      image="/about3.png"
+    />
 
   </v-sheet>
 </template>
 
 <script>
+import IntroductoryBlog from '@/components/IntroductoryBlog.vue'
+
 export default {
+  components: {
+    IntroductoryBlog
+  },
   head() {
     return {
       title: this.$t('about')
