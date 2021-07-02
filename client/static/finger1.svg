@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="662px" height="386px" viewBox="0 0 662 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-noodleBlueL</title>
+    <defs>
+        <linearGradient x1="80.5059977%" y1="31.5678234%" x2="70.7546413%" y2="26.1720155%" id="linearGradient-1">
+            <stop stop-color="#03004E" offset="0%"></stop>
+            <stop stop-color="#3C3E79" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.267206101">
+        <g id="homepage-Latest-Copy" transform="translate(0.000000, -5944.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M464.986413,5947.20271 C554.517747,5929.80217 641.239202,5988.1391 658.654201,6077.50556 C675.514144,6165.7458 617.601704,6253.28345 528.078996,6270.84858 C501.775356,6275.96549 476.167763,6282.64558 451.334688,6290.7738 L-2.27373675e-13,6330 L-2.27373675e-13,6776 L25.3886739,6783.1193 C12.5420866,6856.87123 12.7020523,6934.16905 27.9008511,7012.03298 C45.5766246,7100.06541 -13.1516455,7187.81087 -102.674354,7205.376 C-192.205687,7222.77653 -278.927143,7164.4396 -296.342141,7075.07314 C-305.153651,7029.98276 -310.632831,6985.3779 -312.970451,6940.77345 C-337.623287,6470.36933 -11.6317396,6040.01434 464.986413,5947.20271 Z" id="ico-noodleBlueL"></path>
+        </g>
+    </g>
+</svg>

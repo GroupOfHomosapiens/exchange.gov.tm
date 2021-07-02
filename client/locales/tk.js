@@ -56,4 +56,6 @@ export default {
   import: 'Import',
   export: 'Eksport',
   financeMonitoringText: 'Düzgünler maksatlary we wezipeleri, jenaýatçylykly ýol bilen alnan girdejileriň kanunlaşdyrylmagyna we terrorçylygyň maliýeleşdirilmegine garşy hereket etmek maksady bilen içerki gözegçiligiň talaplaryny hem-de olary amala aşyrmagyň tertibini kesgitleýär',
+  riskLevelIdentification: 'Töwekgelçilik derejesini kesgitlemek',
+  riskLevelIdentificationText: 'Toparyň işgäri müşderiniň iş görnüşlerini we amallaryny hasaba almak bilen müşderiniň talaba laýyk barlanmagynyň netijesinde alnan maglumatlaryň esasynda müşderiniň jenaýatçylykly ýol bilen alnan girdejileriň kanunlaşdyrylmagy ýa-da terrorçylygyň maliýeleşdirilmegi boýunça amallary amala aşyrmagyna degişli töwekgelçilik derejesini berýär hem-de ony ABS-e girizýär.',
 }
