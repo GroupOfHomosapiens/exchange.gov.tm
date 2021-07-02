@@ -1,5 +1,6 @@
 export default {
   homePage: 'Home',
+  financeMonitoring: 'Financial Monitoring',
   rightsReserved: 'TDHСMB all right reserved',
   pages: 'Pages',
   about: 'About us',
@@ -54,4 +55,7 @@ export default {
   downloadFile: 'Download File',
   import: 'Import',
   export: 'Export',
+  financeMonitoringText: 'The Rules determine main objectives and tasks, internal control requirements for the purposes of anti-money laundering and financing of terrorism and procedure of its implementation.',
+  riskLevelIdentification: 'Risk Level Identification',
+  riskLevelIdentificationText: 'The employee of the Commission on the basis of information received in the course of client due diligence, taking into account the kinds of activity and operations of the client, evaluates and assign a respective risk level of performance by the client of operations for the purposes of anti-money laundering and financing of terrorism and entering it in АDB.',
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="618px" height="414px" viewBox="0 0 618 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-noodleBlueR</title>
+    <defs>
+        <linearGradient x1="101.206894%" y1="37.4906211%" x2="84.8384184%" y2="33.8286442%" id="linearGradient-1">
+            <stop stop-color="#03004E" offset="0%"></stop>
+            <stop stop-color="#3C3E79" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.282087054">
+        <g id="homepage-Latest-Copy" transform="translate(-822.000000, -5717.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M2014.68622,6403.49323 C2026.24654,6446.63694 2034.81919,6490.75184 2040.37264,6536.35825 C2051.42575,6626.73233 1986.97584,6709.01246 1896.44942,6720.13027 C1805.88035,6731.08888 1722.9116,6665.78602 1712.51875,6576.60008 C1670.23165,6229.94476 1354.18194,5983.7744 1007.78249,6026.25539 C917.21341,6037.21399 835.084783,5971.85666 823.851809,5882.7252 C818.014741,5834.99928 833.23412,5789.53062 862.230624,5755.60766 L1304.96737,5717.1108 C1644.34034,5796.89291 1922.10267,6057.96672 2014.68622,6403.49323 Z" id="ico-noodleBlueR"></path>
+        </g>
+    </g>
+</svg>
