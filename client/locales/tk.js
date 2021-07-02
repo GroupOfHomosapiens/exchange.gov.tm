@@ -1,4 +1,5 @@
 export default {
+  homePage: 'Baş sahypa',
   rightsReserved: 'TDHСMB ähli haklar goragly',
   pages: 'Sahypalar',
   about: 'Biz barada',

@@ -101,9 +101,9 @@ baha_seljeris@exchange.gov.tm
 
 <script>
 export default {
-  data() {
+  head() {
     return {
-      onboarding: 0
+      title: this.$t('homePage')
     }
   }
 }

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <v-sheet 
     rounded="lg"
     class="pa-2"
@@ -279,3 +280,45 @@ export default {
   },
 }
 </script>
+=======
+	<section>
+		<contacts />
+		<v-text-field outlined :label="$t('pages')"></v-text-field>
+		{{ $t('pages') }}
+	</section>
+</template>
+
+<script>
+import Contacts from '@/components/Contacts.vue';
+
+export default {
+	components: {
+		Contacts, 
+	},
+	data() {
+		return {
+			engine: 'React',
+			text: '',
+			name: 'Baygeldi',
+			color: 'red'
+		}
+	},
+	computed: {
+		handleChange() {
+			return `Hello. My name is ${this.name}.` 
+		}
+	},
+	methods: {
+		handleClick() {
+			this.name = 'Shanazar'
+		}
+	}
+}
+</script>
+
+<style>
+	.btn {
+		background-color: red;
+	}
+</style>
+>>>>>>> 0b24ae1aa38f7207681fc7c8943b407f91a8e2b2

@@ -1,4 +1,5 @@
 export default {
+  homePage: 'Home',
   rightsReserved: 'TDHСMB all right reserved',
   pages: 'Pages',
   about: 'About us',
