@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-blue my-15 px-2 mx-n2">
+  <section class="bg-blue my-15 px-2 mx-n2" :style="backgroundSkew">
 
-    <img src="/finger1.svg" class="finger-1">
-    <img src="/finger2.svg" class="finger-2">
+    <img src="/finger1.svg" class="finger-1" :style="fontSkew">
+    <img src="/finger2.svg" class="finger-2" :style="fontSkew">
     
-    <div class="bg-container">
+    <div :style="fontSkew">
       <h2>
         <center>
           {{ title }}
@@ -28,6 +28,14 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    backgroundSkew: {
+      type: String,
+      default: 'transform: skewY(-5deg);'
+    },
+    fontSkew: {
+      type: String,
+      default: 'transform: skewY(5deg);'
     }
   }
 }
@@ -36,7 +44,6 @@ export default {
 <style>
   .bg-blue {
     background-color: #03004e;
-    transform: skewY(-5deg);
     height: 320px;
     padding: 6em 0;
     overflow: hidden;
@@ -45,18 +52,13 @@ export default {
   .finger-1 {
     left: 0;
     width: 42%;
-    transform: skewY(5deg);
     bottom: -20px;
     position: absolute;
   }
   .finger-2 {
     right: 0;
     width: 42%;
-    transform: skewY(5deg);
     top: -10px;
     position: absolute;
-  }
-  .bg-container {
-    transform: skewY(5deg);
   }
 </style>
