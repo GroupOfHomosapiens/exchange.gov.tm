@@ -52,7 +52,7 @@
             <v-banner>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus nec sem id malesuada.
     Curabitur lacinia sem et turpis euismod, eget elementum ex pretium.
-            <img style="float:right; margin: " src="/outline_download_black_24dp.png" alt="">
+            <img style="float:right; " src="/outline_download_black_24dp.png" alt="">
     <template v-slot:actions>
                   <v-btn
               color="primary"
@@ -165,7 +165,7 @@
       :text="$t('legislation2')"
       backgroundSkew="transform: skewY(5deg);"
       fontSkew="transform: skewY(-5deg);"
-      
+      skewClass="mx-auto pa-2 text-justify mt-md-5"
     />
     
   </v-sheet>
@@ -178,7 +178,9 @@ import LegislationBlue from '@/components/LegislationBlue.vue'
 
 export default {
   componets: {
-    IntroductoryBlog, IntroductoryBlue, LegislationBlue
+    IntroductoryBlog,
+    IntroductoryBlue,
+    LegislationBlue
   },
   data() {
     return {
