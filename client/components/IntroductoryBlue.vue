@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue my-15 px-2 mx-n2" :style="backgroundSkew">
+  <section class="bg-blue my-15 py-16 px-2 mx-n2" :style="backgroundSkew">
 
     <img src="/finger1.svg" class="finger-1" :style="fontSkew">
     <img src="/finger2.svg" class="finger-2" :style="fontSkew">
@@ -10,7 +10,7 @@
           {{ title }}
         </center>
       </h2>
-      <div style="max-width: 600px;" class="mx-auto text-justify mt-md-7 mt-3">
+      <div style="max-width: 600px;" :class="skewClass">
         {{ text }}
       </div>
     </div>
@@ -36,6 +36,10 @@ export default {
     fontSkew: {
       type: String,
       default: 'transform: skewY(5deg);'
+    },
+    skewClass: {
+      type: String,
+      default: 'mx-auto pa-2 text-justify mt-md-7 mt-3'
     }
   }
 }
@@ -44,7 +48,7 @@ export default {
 <style>
   .bg-blue {
     background-color: #03004e;
-    height: 320px;
+    height: 350px;
     padding: 6em 0;
     overflow: hidden;
     color: #acadb7;

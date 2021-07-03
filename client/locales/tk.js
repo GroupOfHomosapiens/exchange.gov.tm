@@ -43,6 +43,7 @@ export default {
   workOrder: 'Iş tertibi',
   commands: 'Buýruklar',
   principles: 'Kanunlar',
+  consularTitle: 'Konsullykda kanunlaşdyrmagyň tertibi hakynda gözükdiriji',
   internalSupervisionNormalize: 'Içerki gözegçilik kadalary',
   aboutText1: 'Türkmenistanyň Döwlet haryt-çig mal biržasy Türkmenistanyň Prezidentiniň 1994-nji ýylyň 29-njy iýulyndaky Permany bilen döredildi, ol döwlet tarapyndan eksport-import amalllaryny düzgünleşdirmek boýunça baş edaranyň wezipesini ýerine ýetirýän, ýurduň iň bir wajyp ykdysady edarasydyr. Biržanyň işiniň ýola goýlan mehanizmi oňa halkara ykdysady ulgamyna üstünlikli goşulmaga mümkinçilik berýär.',
   aboutText2: 'Beýleki biržälardan tapawutlylykda Türkmenistanyň haryt-çig mal biržasynyň iş çygry diýseň giňdir. Ol aslynda uniwersal birža bolup, söwdalar arkaly dürli haryt-maddy gymmatlyklary ýerleýär, muňa intellektual eýeçiliginiň obýektleri, sungat eserleri we gozgalmaýan emläkler degişli däldir.',

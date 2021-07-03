@@ -44,6 +44,7 @@ export default {
   commands: 'Buýruklar',
   principles: 'Kanunlar',
   internalSupervisionNormalize: 'Içerki gözegçilik kadalary',
+  consularTitle: 'Consular Legalization Procedure Instruction',
   aboutText1: 'The State Commodity and Raw Material Exchange of Turkmenistan is established by the Decree of the President of Turkmenistan dated 29th July 1994 and is the most important economic institution of the country performing the function of a main organ of state regulation of export-import bargains. The smoothly running mechanism of the Exchange functioning enables it to be successfully integrated in an international economic system.',
   aboutText2: 'Unlike the other Exchanges, the spectrum of activity of the State Commodity and Raw Material Exchange of Turkmenistan is extremely wide. It is, as a matter of fact, a universal Exchange accepting and selling through the auctions various commodity-material assets, except for intellectual property items, works of arts and real estate.',
   aboutText3: 'Equal conditions for participants of the Exchange both for business foreign people and entrepreneurs of Turkmenistan, increase and acceleration of goods turnover, home market saturation with the necessary consumer goods, industrial and technological products and equipment intended for modernization of a national economic complex of the country.',

@@ -9,7 +9,12 @@
       image="/legislation1.png"
     />
 
-    <div style="background-color: rgb(7,33,91)">
+    <!-- <legislation-blue 
+      :title="$t('arbitrationTeam')"
+      :texts="translate(text)"
+    /> -->
+
+    <!-- <div style="background-color: rgb(7,33,91)">
       <h2 class="primary--text py-10 pa-2">
         <center>{{ $t('arbitrationTeam') }}</center>
       </h2>
@@ -31,8 +36,8 @@
           </div>
         </v-col>
       </v-row>
-    </div>
-    <div>
+    </div> -->
+    <div style="background-color: cyan">
       <h2 class="primary--text my-10">
           <center>{{ $t('workOrder') }}</center>
       </h2>
@@ -44,8 +49,12 @@
           :key="work"
         >
           <div class="px-5 py-2">
-            <center class="text-justify"> {{ work }} </center>
-            <v-btn
+            <v-banner>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus nec sem id malesuada.
+    Curabitur lacinia sem et turpis euismod, eget elementum ex pretium.
+            <img style="float:right; margin: " src="/outline_download_black_24dp.png" alt="">
+    <template v-slot:actions>
+                  <v-btn
               color="primary"
               block
               outlined
@@ -54,14 +63,21 @@
             <v-icon left>mdi-file-download-outline</v-icon>
               {{ $t('downloadFile') }}
             </v-btn>
+    </template>
+  </v-banner>
+           <!--  <v-btn
+              color="primary"
+              block
+              outlined
+              class="mt-5"
+            >
+            <v-icon left>mdi-file-download-outline</v-icon>
+              {{ $t('downloadFile') }}
+            </v-btn> -->
           </div>
         </v-col>
       </v-row>
-      <div 
-        style="background-color: rgb(7,33,91); border-radius: 5px;"
-        class="pa-1 my-5"
-      >
-      </div>
+    <!--   <v-divider style="background-color: rgb(7,33,91)" class="my-8"></v-divider> -->
     </div>
     <div>
       <h2 class="primary--text my-10">
@@ -110,11 +126,7 @@
           </div>
         </v-col>
       </v-row>
-      <div 
-        style="background-color: rgb(7,33,91); border-radius: 5px;"
-        class="pa-1 my-5"
-      >
-      </div>
+      <v-divider style="background-color: rgb(7,33,91)" class="my-8"></v-divider>
     </div>
     <div>
       <h2 class="primary--text my-10">
@@ -141,102 +153,78 @@
           </div>
         </v-col>
       </v-row>
-     <!--  <div 
-        style="background-color: rgb(7,33,91); border-radius: 5px;"
-        class="pa-1 my-2"
-      >
-      </div> -->
     </div>
-    <v-row
-      no-gutters
-      class="d-flex justify-center align-center white--text my-5 py-10"
-      style="background-color: rgb(7,33,91);"
-    >
 
-      <v-col
-        cols="10"
-        md="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/carpet1.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
+    <introductory-blue
+      :title="$t('internalSupervisionNormalize')"
+      :text="$t('legislation2')"
+    />
 
-      <v-col
-        cols="10"
-        md="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="white--text my-10"
-          align="center"
-        >
-          {{ $t('internalSupervisionNormalize') }}
-        </h3>
-
-        {{ $t('legislation2') }}
-      </v-col>
-
-    </v-row>
+    <introductory-blue
+      :title="$t('consularTitle')"
+      :text="$t('legislation2')"
+      backgroundSkew="transform: skewY(5deg);"
+      fontSkew="transform: skewY(-5deg);"
+      
+    />
+    
   </v-sheet>
 </template>
 
 <script>
 import IntroductoryBlog from '@/components/IntroductoryBlog.vue'
+import IntroductoryBlue from '@/components/IntroductoryBlue.vue'
+import LegislationBlue from '@/components/LegislationBlue.vue'
+
 export default {
   componets: {
-    IntroductoryBlog
+    IntroductoryBlog, IntroductoryBlue, LegislationBlue
   },
-  data: () => ({
-    texts: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat assumenda corporis autem nam voluptatum exercitationem, minus vero, rerum harum iusto fuga eius nemo eaque et quisquam voluptatem molestias labore.',
-    ],
-    works: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-    ],
-    commands: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-    ],
-    commands1: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-    ],
-    principles: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-    ],
-
-  }),
+  data() {
+    return {
+      // texts: [
+      //   { text_tk: 'Birža söwdalarynda baglaşylan geleşikleriň hereketini ýatyrmak', text_ru: 'Аннулирование действия сделок, заключенных на биржевых торгах', text_eng: 'Cancellation of validity of bargains concluded at exchange auctions' },
+      //   { text_tk: 'Biržada hasaba alnyp, zerurlygy bolmadyk şertnamalary ýatyrmak', text_ru: 'Аннулирование зарегистрированных и невостребованных на Бирже договоров', text_eng: 'Cancellation of contracts registered and not claimed at the Exchange' },
+      //   { text_tk: 'Birža geleşikleri we birža söwdasynyň meseleleri boýunça jedelleri seretmek',text_ru: 'Рассмотрение споров, по биржевым сделкам и вопросам биржевой торговли', text_eng: 'Consideration of disputes on exchange bargains and exchange trade issues' },
+      //   { text_tk: 'Şertnamalar baglaşylanda, olara üýtgetmeler girizilende we olar bozulanda ýüze çykýan meselelere seretmek',text_ru: 'Рассмотрение споров по договорам, при их заключении, внесении изменений и расторжении', text_eng: 'Consideration of disputes on contracts upon their conclusion, modification and cancellation' },
+      //   { text_tk: 'Topar kabul edilen karary üýtgetmäge, ýatyrmaga we dikeltmäge haklydyr',text_ru: 'Комиссия вправе изменить, отменить и восстановить принятое решение', text_eng: 'Commission has the right to change, cancel and restore the decision made' },
+      //   { text_tk: 'Birža söwdasynyň gatnaşyjylary tarapyndan ýol berlen bozulmalara seretmek',text_ru: 'Рассмотрение нарушений допущенных участниками биржевой торговли', text_eng: 'Consideration of violations committed by participants of exchange trade' },
+      // ],
+      works: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
+      ],
+      commands: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
+      ],
+      commands1: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+      ],
+      principles: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
+      ],
+    }
+  },
   head() {
     return {
       title: this.$t('legislation')
     }
   },
+  // methods: {
+  //   translate(obj) {
+  //     let lang = this.$i18n.locale;
+  //     if ( lang === 'en' ) {
+  //       return obj.text_en;
+  //     } else if ( lang === 'ru' ) {
+  //       return obj.text_ru;
+  //     } else {
+  //       return obj.text_tk;
+  //     }
+  //   }
+  // },
 }
 </script>
