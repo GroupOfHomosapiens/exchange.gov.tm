@@ -3,6 +3,13 @@
     rounded="lg"
     class="pa-2"
   >
+
+  <div class="mx-n2">
+    <v-img src="/wave1.svg"></v-img>
+    <div style="background-image: linear-gradient(to bottom, #D4D2FF, #fff); height: 500px;">
+      a
+    </div>
+  </div>
    <v-row
       no-gutters
       class="d-flex justify-center my-1"
@@ -75,16 +82,17 @@
         </v-col>
       </v-row>
     </div>
+
     <div>
       <h2 class="primary--text my-10">
-          <center>{{ $t('workOrder') }}</center>
+        <center>{{ $t('workOrder') }}</center>
       </h2>
       <v-row>
         <v-col
           cols="12"
           sm="6"
           v-for="(work, i) in works"
-          :key="work"
+          :key="i"
         >
           <div class="px-5 py-2">
             <center class="text-justify"> {{ work }} </center>
@@ -116,7 +124,7 @@
           sm="4"
           md="6"
           v-for="(command, i) in commands"
-          :key="command"
+          :key="i"
         >
           <div class="px-5 py-2">
             <center class="text-justify"> {{ command }} </center>
@@ -137,7 +145,7 @@
           cols="12"
           sm="6"
           v-for="(command1, i) in commands1"
-          :key="command1"
+          :key="i"
         >
           <div class="px-5 py-5">
             <center class="text-justify"> {{ command1 }} </center>
@@ -168,7 +176,7 @@
           cols="12"
           sm="6"
           v-for="(principle, i) in principles"
-          :key="principle"
+          :key="i"
         >
           <div class="px-5 py-2">
             <center class="text-justify"> {{ principle }} </center>
