@@ -1,9 +1,13 @@
 export default {
+  tdhcmb: 'Turkmen Dowlet Cig Mal Birzasy',
+  mainInfo1: 'Exchange trades are held from Monday to Friday. Agriculture, industry & communications and trade complex commodities at 16:00, Saturday at 11:30;',
+  mainInfo2: 'Petrochemical commodities from Monday to Friday at 16:30, Saturday at 12:00;',
   homePage: 'Home',
   financeMonitoring: 'Financial Monitoring',
   rightsReserved: 'TDHСMB all right reserved',
   pages: 'Pages',
   about: 'About us',
+  contactUs: 'Contact us',
   legislation: 'Legislation',
   tel: 'Tel: ',
   advertisement: 'Advertisement',

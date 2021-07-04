@@ -9,6 +9,32 @@
         min-height="1000"
         style="overflow: hidden;"
       >
+
+      <v-row
+        no-gutters
+        align="center"
+        justify="center"
+        class="mt-5"
+      >
+        <v-alert
+          border="left"
+          color="primary"
+          type="info"
+          min-width="90%"
+          max-width="95%"
+          text
+        >
+          <ul>
+            <li>
+              {{ $t('mainInfo1') }}
+            </li>
+            <li>
+              {{ $t('mainInfo2') }}
+            </li>
+          </ul>
+        </v-alert>
+      </v-row>
+
       <div
         style="min-height: 550px;"
         class="outer"
@@ -16,7 +42,7 @@
         <div class="inner" style="min-height: 500px;">
           <div class="pt-10">
             <center class="text-h4 mt-16 font-weight-bold primary--text" style="font-family: 'operator mono' !important;">
-              START INVESTING TODAY
+              {{ $t('tdhcmb') }}
             </center>
             <div style="max-width: 500px;" class="mx-auto">
               <center class="mt-10 mb-5">
@@ -24,16 +50,24 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Liberoeligendi fugit sunt! Consequatur fugiat quas hic quaerat nisi iste nesciunt corporis ex, eos velit ipsam nulla sapiente.
               </center>
               <center>
-
-            <v-btn color="primary lighten-1" elevation="0" class="rounded-lg mx-2">Contact us</v-btn>
-            <v-btn color="primary lighten-1" outlined class="rounded-lg mx-2">About us</v-btn>
+                <v-hover v-slot="{ hover }">
+                  <v-btn
+                    color="primary"
+                    dark
+                    elevation="0"
+                    :outlined="hover ? false : true"
+                    class="rounded-lg"
+                  >
+                    {{ $t('contactUs') }}
+                  </v-btn>
+                </v-hover>
               </center>
             </div>
 
           </div>
           </div>
       </div>
-      
+
       <v-row
         no-gutters
         class="my-5"
@@ -52,7 +86,6 @@
           class="pa-7"
         >
           <v-skeleton-loader
-            v-bind="attrs"
             type="paragraph, button"
             width="300"
             v-if="isLoading"
@@ -166,5 +199,21 @@ export default {
     background-image: url('/background2.svg');
     background-position: -320px 120px;
     background-size: 400px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 11px 26px;
+    font-size: 24px;
+  }
+  .filled-btn {
+    background: #3D8AFF;
+    color: white;
+  }
+  .v-application--is-ltr .v-alert__icon  {
+    margin-left: -23px;
   }
 </style>

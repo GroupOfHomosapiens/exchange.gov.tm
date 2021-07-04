@@ -1,9 +1,13 @@
 export default {
+  tdhcmb: 'Turkmen Dowlet Cig Mal Birzasy',
+  mainInfo1: 'Birza sowdalary dusenbe anna gunleri oba-hojalyk, senagat we kommunikasiya we sowda toplumlary boyunca sagat 16:00. Şenbe güni sagat 11:30',
+  mainInfo2: 'Nebit we gaz pudagy boýunça dusenbe anna gunleri sagat 16:30, Şenbe güni 12:00',
   homePage: 'Baş sahypa',
   financeMonitoring: 'Maliýe gözegçiligi',
   rightsReserved: 'TDHСMB ähli haklar goragly',
   pages: 'Sahypalar',
   about: 'Biz barada',
+  contactUs: 'Habarlaşyň',
   legislation: 'Kanunçylyk',
   tel: 'Tel: ',
   advertisement: 'Bildirişler',

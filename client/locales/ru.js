@@ -1,9 +1,13 @@
 export default {
+  tdhcmb: 'Turkmen Dowlet Cig Mal Birzasy',
+  mainInfo1: 'Товары по секциям сельское хозяйство, промышленность и коммуникация и торговый комплекс начинается с Пн.-Пт. 16:00, Сб. 11:30;',
+  mainInfo2: 'Биржевые торги по нефте-газовому сектору Пн.-Пт. 16:30, Сб. 12:00',
   homePage: 'Главная',
   financeMonitoring: 'Финансовый мониторинг',
   rightsReserved: 'TDHСMB все права зашишены',
   pages: 'Stranisy',
   about: 'О нас',
+  contactUs: 'Contact Us',
   legislation: 'Законодательство',
   tel: 'Тел: ',
   advertisement: 'Advertisement',
