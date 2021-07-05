@@ -60,7 +60,12 @@
 
     </v-row>
 
-    <v-row
+    <introductory-blue 
+      :title="$t('objectiveAndTask')"
+      :text="$t('aboutText3')"
+    />
+
+    <!-- <v-row
       no-gutters
       class="d-flex justify-center align-center white--text my-5 py-10"
       style="background-color: rgb(7,33,91);"
@@ -108,7 +113,7 @@
         {{ $t('aboutText3') }}
       </v-col>
 
-    </v-row>
+    </v-row> -->
 
     <introductory-blog
       :title="$t('qualifiedSpecialists')"
@@ -177,10 +182,12 @@
 
 <script>
 import IntroductoryBlog from '@/components/IntroductoryBlog.vue'
+import IntroductoryBlue from '@/components/IntroductoryBlue.vue'
 
 export default {
   components: {
-    IntroductoryBlog
+    IntroductoryBlog,
+    IntroductoryBlue,
   },
   head() {
     return {

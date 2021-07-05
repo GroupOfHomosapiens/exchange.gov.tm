@@ -57,7 +57,6 @@
         </template>
       </v-img>
     </v-col>
-
   </v-row>
 </template>
 

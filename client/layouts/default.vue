@@ -222,11 +222,11 @@ export default {
       let lang = this.$i18n.locale;
       if ( lang === 'en' ) {
         return obj.name_en;
-      } else if ( lang === 'ru' ) {
+        } else if ( lang === 'ru' ) {
         return obj.name_ru;
-      } else {
+        } else {
         return obj.name_tk;
-      }
+        }
     },
     changeLocale(lang) {
       this.$router.push();
