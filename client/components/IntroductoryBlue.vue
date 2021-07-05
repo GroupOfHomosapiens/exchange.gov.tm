@@ -4,7 +4,7 @@
     <img src="/finger1.svg" class="finger-1" :style="fontSkew">
     <img src="/finger2.svg" class="finger-2" :style="fontSkew">
     
-    <div :style="fontSkew">
+    <div :style="fontSkew1">
       <h2>
         <center>
           {{ title }}
@@ -31,11 +31,15 @@ export default {
     },
     backgroundSkew: {
       type: String,
-      default: 'transform: skewY(-5deg);'
+      default: 'transform: skewY(-3deg);'
     },
     fontSkew: {
       type: String,
       default: 'transform: skewY(5deg);'
+    },
+    fontSkew1: {
+      type: String,
+      default: 'transform: skewY(3deg);'
     },
     skewClass: {
       type: String,

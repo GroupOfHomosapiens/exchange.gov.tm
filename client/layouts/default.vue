@@ -77,35 +77,6 @@
 
         <v-spacer></v-spacer>
 
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              icon
-              small
-              v-bind="attrs"
-              v-on="on"
-            >
-              <v-icon color="primary"> mdi-home-import-outline </v-icon>
-            </v-btn>
-          </template>
-          <span> {{ $t('import') }} </span>
-        </v-tooltip>
-
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              icon
-              class="mx-3"
-              small
-              v-bind="attrs"
-              v-on="on"    
-            >
-              <v-icon color="primary"> mdi-home-export-outline </v-icon>
-            </v-btn>
-          </template>
-          <span> {{ $t('export') }} </span>
-        </v-tooltip>        
-
         <v-menu
           offset-y 
           open-on-hover
@@ -270,6 +241,11 @@ export default {
     text-decoration: none;
   } 
   .footer a:hover {
-    color: aqua;
+    animation: 1s foot forwards;
+  }
+  @keyframes foot {
+    to {
+      color: aqua;
+    }
   }
 </style>

@@ -9,206 +9,584 @@
       image="/legislation1.png"
     />
 
-    <!-- <legislation-blue 
-      :title="$t('arbitrationTeam')"
-      :texts="translate(text)"
-    /> -->
-
-    <!-- <div style="background-color: rgb(7,33,91)">
-      <h2 class="primary--text py-10 pa-2">
-        <center>{{ $t('arbitrationTeam') }}</center>
+  <div class="mx-n2 mt-n10">
+    <v-img src="/wave1.svg"></v-img>
+    <div style="background-image: linear-gradient(to bottom, #D4D2FF, #fff)">
+      <h2 class="primary--text py-5 pa-2">
+        <center>{{ $t('arbitrationCommission') }}</center>
       </h2>
-
       <v-row>
         <v-col
           cols="12"
           sm="6"
           md="4"
-          v-for="(text, i) in texts"
-          :key="text"
-          class="white--text"
+          class="primary--text"
         >
           <h3 >
-            <center class="primary--text"> {{ i + 1 }} </center>
+            <center class="primary--text"> 1 </center>
           </h3>
           <div class="px-5 py-5">
-            <center class="text-justify"> {{ text }} </center>
+            <center> {{ $t('legislationText') }} </center>
           </div>
         </v-col>
-      </v-row>
-    </div> -->
-    <div style="background-color: cyan">
-      <h2 class="primary--text my-10">
-          <center>{{ $t('workOrder') }}</center>
-      </h2>
-      <v-row>
-        <v-col
-          cols="12"
-          sm="6"
-          v-for="(work, i) in works"
-          :key="work"
-        >
-          <div class="px-5 py-2">
-            <v-banner>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus nec sem id malesuada.
-    Curabitur lacinia sem et turpis euismod, eget elementum ex pretium.
-            <img style="float:right; " src="/outline_download_black_24dp.png" alt="">
-    <template v-slot:actions>
-                  <v-btn
-              color="primary"
-              block
-              outlined
-              class="mt-5"
-            >
-            <v-icon left>mdi-file-download-outline</v-icon>
-              {{ $t('downloadFile') }}
-            </v-btn>
-    </template>
-  </v-banner>
-           <!--  <v-btn
-              color="primary"
-              block
-              outlined
-              class="mt-5"
-            >
-            <v-icon left>mdi-file-download-outline</v-icon>
-              {{ $t('downloadFile') }}
-            </v-btn> -->
-          </div>
-        </v-col>
-      </v-row>
-    <!--   <v-divider style="background-color: rgb(7,33,91)" class="my-8"></v-divider> -->
-    </div>
-    <div>
-      <h2 class="primary--text my-10">
-          <center>{{ $t('commands') }}</center>
-      </h2>
-      <v-row no-gutters>
         <v-col
           cols="12"
           sm="6"
           md="4"
-          v-for="(command, i) in commands"
-          :key="command"
+          class="primary--text"
         >
-          <div class="px-5 py-2">
-            <center class="text-justify"> {{ command }} </center>
-            <v-btn
-              color="primary"
-              block
-              outlined
-              class="mt-5"
-            >
-            <v-icon left>mdi-file-download-outline</v-icon>
-              {{ $t('downloadFile') }}
-            </v-btn>
-          </div>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col
-          cols="12"
-          sm="6"
-          v-for="(command1, i) in commands1"
-          :key="command1"
-        >
+          <h3 >
+            <center class="primary--text"> 2 </center>
+          </h3>
           <div class="px-5 py-5">
-            <center class="text-justify"> {{ command1 }} </center>
-            <v-btn
-              color="primary"
-              block
-              outlined
-              class="mt-5"
-            >
-            <v-icon left>mdi-file-download-outline</v-icon>
-              {{ $t('downloadFile') }}
-            </v-btn>
+            <center> {{ $t('legislationText1') }} </center>
           </div>
         </v-col>
-      </v-row>
-      <v-divider style="background-color: rgb(7,33,91)" class="my-8"></v-divider>
-    </div>
-    <div>
-      <h2 class="primary--text my-10">
-          <center>{{ $t('principles') }}</center>
-      </h2>
-      <v-row>
         <v-col
           cols="12"
           sm="6"
-          v-for="(principle, i) in principles"
-          :key="principle"
+          md="4"
+          class="primary--text"
         >
-          <div class="px-5 py-2">
-            <center class="text-justify"> {{ principle }} </center>
-            <v-btn
-              color="primary"
-              block
-              outlined
-              class="mt-5"
-            >
-            <v-icon left>mdi-file-download-outline</v-icon>
-              {{ $t('downloadFile') }}
-            </v-btn>
+          <h3 >
+            <center class="primary--text"> 3 </center>
+          </h3>
+          <div class="px-5 py-5">
+            <center> {{ $t('legislationText2') }} </center>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+          class="primary--text"
+        >
+          <h3 >
+            <center class="primary--text"> 4 </center>
+          </h3>
+          <div class="px-5 py-5">
+            <center> {{ $t('legislationText3') }} </center>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+          class="primary--text"
+        >
+          <h3 >
+            <center class="primary--text"> 5 </center>
+          </h3>
+          <div class="px-5 py-5">
+            <center> {{ $t('legislationText4') }} </center>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+          class="primary--text"
+        >
+          <h3 >
+            <center class="primary--text"> 6 </center>
+          </h3>
+          <div class="px-5 py-5">
+            <center> {{ $t('legislationText5') }} </center>
           </div>
         </v-col>
       </v-row>
     </div>
+  </div>
+  <div>
+    <h2 class="primary--text my-10">
+      <center>{{ $t('procedures') }}</center>
+    </h2>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('proceduresText') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('proceduresText1') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
+  <div>
+    <h2 class="primary--text my-10">
+      <center>{{ $t('orders') }}</center>
+    </h2>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('ordersText') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('ordersText1') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+       <v-col
+        cols="12"
+        sm="6"
+        md="4"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('ordersText2') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-16"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-7">
+          <center> {{ $t('ordersText3') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-7">
+          <center> {{ $t('ordersText4') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
+  <div>
+    <h2 class="primary--text my-10">
+      <center>{{ $t('laws') }}</center>
+    </h2>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('lawsText') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <div class="px-5 py-2">
+          <center> {{ $t('lawsText1') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
 
     <introductory-blue
       :title="$t('internalSupervisionNormalize')"
       :text="$t('legislation2')"
     />
 
+    <div>
+      <h2 class="primary--text my-15 py-3">
+        <center> {{ $t('documentsForDownloading') }} </center>
+      </h2>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText1') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText2') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+         <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText3') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-5"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText4') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="px-5 py-2">
+          <center> {{ $t('downLoadingText5') }} </center>
+          <v-btn
+            color="primary"
+            block
+            outlined
+            class="mt-11"
+          >
+          <v-icon left>mdi-file-download-outline</v-icon>
+            {{ $t('downloadFile') }}
+          </v-btn>
+        </div>
+        </v-col>
+      </v-row>
+    </div>
+
     <introductory-blue
       :title="$t('consularTitle')"
-      :text="$t('legislation2')"
-      backgroundSkew="transform: skewY(5deg);"
-      fontSkew="transform: skewY(-5deg);"
+      :text="$t('legislation3')"
+      backgroundSkew="transform: skewY(3deg);"
+      fontSkew1="transform: skewY(-3deg);"
       skewClass="mx-auto pa-2 text-justify mt-md-5"
     />
     
+    <div>
+      <div class="mx-n2" style="background-image: linear-gradient(to bottom, #D4D2FF, #fff); border-radius: 25px">
+        <div>
+          <h2 class="primary--text my-5 py-10">
+            <center> {{ $t('consularLegalization') }} </center>
+          </h2>
+          <v-row>
+            <v-col
+              cols="12"
+              sm="6"
+              md="4"
+            >
+              <div class="px-5 pb-6">
+                <center>
+                  <v-icon color="primary">mdi-circle</v-icon>
+                </center>
+                <center class="pt-4"> 
+                  {{ $t('consularLegalizationText') }} 
+                </center>
+              </div>
+            </v-col>
+             <v-col
+              cols="12"
+              sm="6"
+              md="4"
+            >
+              <div class="px-5 pb-6">
+                <center>
+                  <v-icon color="primary">mdi-circle</v-icon>
+                </center>
+                <center class="pt-4"> 
+                  {{ $t('consularLegalizationText1') }} 
+                </center>
+              </div>
+            </v-col>
+            <v-col
+              cols="12"
+              sm="6"
+              md="4"
+            >
+              <div class="px-5 pb-6">
+                <center>
+                  <v-icon color="primary">mdi-circle</v-icon>
+                </center>
+                <center class="pt-4"> 
+                  {{ $t('consularLegalizationText2') }} 
+                </center>
+              </div>
+            </v-col>
+          </v-row>
+          <template>
+            <v-timeline
+              dense
+            >
+              <v-timeline-item>
+                <v-card max-width="1015" shaped>
+                  <v-card-text class="white text--primary" style="background-image: linear-gradient(to bottom, #D4D2FF, #fff);">
+                    <h2><center class="primary--text pb-5 pt-2">{{ $t('consularLegalizationText3') }}</center></h2>
+                    {{ $t('consularLegalizationText4') }}
+                  </v-card-text>
+                 </v-card>
+              </v-timeline-item>
+              <v-timeline-item>
+                <v-card max-width="1015" shaped>
+                  <v-card-text class="white text--primary" style="background-image: linear-gradient(to bottom, #D4D2FF, #fff);">
+                    <h2><center class="primary--text pb-5 pt-2">{{ $t('consularLegalizationText3') }}</center></h2>
+                    {{ $t('consularLegalizationText6') }}
+                  </v-card-text>
+                 </v-card>
+              </v-timeline-item>
+            </v-timeline>
+          </template>
+        </div>
+      </div>
+    </div>
+    <div class="primary my-5 darken-2 mx-n2">
+      <div>
+        <h1>
+          <center class="white--text darken-5 py-5"> {{ $t('ratesAndfess') }} </center>
+        </h1>
+        <h4>
+          <center class="grey--text lighten-2 py-2"> {{ $t('tariffsForservices') }} </center>
+        </h4>
+      </div>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="white--text ml-15 my-10 ">
+            <center> {{ $t('ratesAndfessText') }} </center>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="white--text my-16">
+            <h2><center> {{ $t('ratesAndfessText1') }} </center></h2>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="white--text my-16">
+            <center> {{ $t('ratesAndfessText2') }} </center>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <div class="ml-15">
+            <h3><center id="color"> {{ $t('brokerageServices') }} </center></h3>
+          </div>
+
+          <div class="ml-15 my-5">
+            <h3><center class="white--text"> {{ $t('totalContractAmount') }} </center></h3>
+          </div>
+          <v-sheet
+            class="ml-15 my-5"
+            rounded="lg"
+            color="white"
+            elevation="5"
+            height="57"
+            width="315"
+          >
+            <div class="pt-4">
+              <span class="black--text pa-4"> {{ $t('number') }} </span>
+              <span class="black--text pa-4 pl-7 pb-4"> {{ $t('number1') }} </span>
+            </div>
+          </v-sheet>
+           <v-sheet
+            class="ml-15 my-5"
+            rounded="lg"
+            color="white"
+            elevation="5"
+            height="57"
+            width="315"
+          >
+            <div class="pt-4">
+              <span class="black--text pa-4"> {{ $t('forNonResidents') }} </span>
+              <span class="black--text pa-4 pl-16 pb-4"> {{ $t('number2') }} </span>
+            </div>
+          </v-sheet>
+           <v-sheet
+            class="ml-15 my-5"
+            rounded="lg"
+            color="white"
+            elevation="5"
+            height="57"
+            width="315"
+          >
+            <div class="pt-4">
+              <span class="black--text pa-4"> {{ $t('over') }} </span>
+              <span class="black--text pa-4 pl-6 pb-4"> {{ $t('number3') }} </span>
+            </div>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </div>
   </v-sheet>
 </template>
 
 <script>
 import IntroductoryBlog from '@/components/IntroductoryBlog.vue'
 import IntroductoryBlue from '@/components/IntroductoryBlue.vue'
-import LegislationBlue from '@/components/LegislationBlue.vue'
 
 export default {
   componets: {
     IntroductoryBlog,
     IntroductoryBlue,
-    LegislationBlue
   },
   data() {
     return {
-      // texts: [
-      //   { text_tk: 'Birža söwdalarynda baglaşylan geleşikleriň hereketini ýatyrmak', text_ru: 'Аннулирование действия сделок, заключенных на биржевых торгах', text_eng: 'Cancellation of validity of bargains concluded at exchange auctions' },
-      //   { text_tk: 'Biržada hasaba alnyp, zerurlygy bolmadyk şertnamalary ýatyrmak', text_ru: 'Аннулирование зарегистрированных и невостребованных на Бирже договоров', text_eng: 'Cancellation of contracts registered and not claimed at the Exchange' },
-      //   { text_tk: 'Birža geleşikleri we birža söwdasynyň meseleleri boýunça jedelleri seretmek',text_ru: 'Рассмотрение споров, по биржевым сделкам и вопросам биржевой торговли', text_eng: 'Consideration of disputes on exchange bargains and exchange trade issues' },
-      //   { text_tk: 'Şertnamalar baglaşylanda, olara üýtgetmeler girizilende we olar bozulanda ýüze çykýan meselelere seretmek',text_ru: 'Рассмотрение споров по договорам, при их заключении, внесении изменений и расторжении', text_eng: 'Consideration of disputes on contracts upon their conclusion, modification and cancellation' },
-      //   { text_tk: 'Topar kabul edilen karary üýtgetmäge, ýatyrmaga we dikeltmäge haklydyr',text_ru: 'Комиссия вправе изменить, отменить и восстановить принятое решение', text_eng: 'Commission has the right to change, cancel and restore the decision made' },
-      //   { text_tk: 'Birža söwdasynyň gatnaşyjylary tarapyndan ýol berlen bozulmalara seretmek',text_ru: 'Рассмотрение нарушений допущенных участниками биржевой торговли', text_eng: 'Consideration of violations committed by participants of exchange trade' },
-      // ],
-      works: [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-      ],
-      commands: [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-      ],
-      commands1: [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-      ],
-      principles: [
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel, provident magnam harum laboriosam fugiat quisquam ducimus soluta iusto odio officiis nisi iste illo laborum temporibus neque eum recusandae! At?'
-      ],
+
     }
   },
   head() {
@@ -216,17 +594,12 @@ export default {
       title: this.$t('legislation')
     }
   },
-  // methods: {
-  //   translate(obj) {
-  //     let lang = this.$i18n.locale;
-  //     if ( lang === 'en' ) {
-  //       return obj.text_en;
-  //     } else if ( lang === 'ru' ) {
-  //       return obj.text_ru;
-  //     } else {
-  //       return obj.text_tk;
-  //     }
-  //   }
-  // },
 }
 </script>
+
+
+<style scoped>
+  #color{
+    color: #23eaa4;
+  }
+</style>
