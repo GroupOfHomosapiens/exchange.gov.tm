@@ -1,20 +1,25 @@
 <template>
   <section class="bg-blue my-15 py-16 px-2 mx-n2" :style="backgroundSkew">
-
-    <img src="/finger1.svg" class="finger-1" :style="fontSkew">
-    <img src="/finger2.svg" class="finger-2" :style="fontSkew">
-    
-    <div :style="fontSkew1">
-      <h2>
-        <center>
-          {{ title }}
-        </center>
-      </h2>
-      <div style="max-width: 600px;" :class="skewClass">
-        {{ text }}
+    <img
+      src="/finger1.svg"
+      class="finger-1" 
+      :style="fontSkew"
+    />
+    <img
+      src="/finger2.svg"
+      class="finger-2"
+      :style="fontSkew"
+    >
+      <div :style="fontSkew">
+        <h2>
+          <center>
+            {{ title }}
+          </center>
+        </h2>
+        <div style="max-width: 600px;" class="mx-auto mt-10">
+          <center> {{ text }} </center>
+        </div>
       </div>
-    </div>
-
   </section>
 </template>
 
@@ -31,19 +36,11 @@ export default {
     },
     backgroundSkew: {
       type: String,
-      default: 'transform: skewY(-3deg);'
+      default: 'transform: skewY(-5deg);'
     },
     fontSkew: {
       type: String,
       default: 'transform: skewY(5deg);'
-    },
-    fontSkew1: {
-      type: String,
-      default: 'transform: skewY(3deg);'
-    },
-    skewClass: {
-      type: String,
-      default: 'mx-auto pa-2 text-justify mt-md-7 mt-3'
     }
   }
 }

@@ -1,33 +1,35 @@
 <template>
-  <v-sheet
-    rounded="lg"
-    class="pa-2"
-  >
-    <introductory-blog
-      :title="$t('financeMonitoring')"
-      :text="$t('financeMonitoringText')"
-      image="/finance-monitoring.png"
-      :hasFile="true"
-    />
+  <v-container>
+    <v-sheet
+      rounded="lg"
+      class="pa-2"
+    >
+      <introductory-blog
+        :title="$t('financeMonitoring')"
+        :text="$t('financeMonitoringText')"
+        image="/finance-monitoring.png"
+        :hasFile="true"
+      />
 
-    <introductory-blue
-      :title="$t('financeMonitoring')"
-      :text="$t('financeMonitoringText')"
-    />
+      <introductory-blue
+        :title="$t('financeMonitoring')"
+        :text="$t('financeMonitoringText')"
+      />
 
-    <introductory-blog
-      :title="$t('riskLevelIdentification')"
-      :text="$t('riskLevelIdentificationText')"
-      image="/riskLevel.png"
-    />
+      <introductory-blog
+        :title="$t('riskLevelIdentification')"
+        :text="$t('riskLevelIdentificationText')"
+        image="/riskLevel.png"
+      />
 
-    <introductory-blue
-      :title="$t('financeMonitoring')"
-      :text="$t('financeMonitoringText')"
-      backgroundSkew="transform: skewY(5deg);"
-      fontSkew="transform: skewY(-5deg);"
-    />
-  </v-sheet>
+      <introductory-blue
+        :title="$t('financeMonitoring')"
+        :text="$t('financeMonitoringText')"
+        backgroundSkew="transform: skewY(5deg);"
+        fontSkew="transform: skewY(-5deg);"
+      />
+    </v-sheet>
+  </v-container>
 </template>
 
 <script>

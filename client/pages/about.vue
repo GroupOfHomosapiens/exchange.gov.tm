@@ -1,4 +1,5 @@
 <template>
+<v-container>
   <v-sheet 
     rounded="lg"
     class="pa-2"
@@ -65,56 +66,6 @@
       :text="$t('aboutText3')"
     />
 
-    <!-- <v-row
-      no-gutters
-      class="d-flex justify-center align-center white--text my-5 py-10"
-      style="background-color: rgb(7,33,91);"
-    >
-
-      <v-col
-        cols="10"
-        md="6"
-        class="pa-3"
-        align="center"
-        justify="center"
-      >
-        <v-img
-          src="/carpet1.png"
-          max-height="400"
-          max-width="400"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-
-      <v-col
-        cols="10"
-        md="5"
-        class="text-justify pa-1"
-      >
-        <h3
-          class="white--text"
-          align="center"
-        >
-          {{ $t('objectiveAndTask') }}
-        </h3>
-
-        {{ $t('aboutText3') }}
-      </v-col>
-
-    </v-row> -->
-
     <introductory-blog
       :title="$t('qualifiedSpecialists')"
       :text="$t('aboutText4')"
@@ -126,7 +77,6 @@
       class="d-flex justify-center align-center my-5"
     >
       
-      
       <v-col
         cols="10"
         md="6"
@@ -135,7 +85,7 @@
         justify="center"
       >
         <v-img
-          src="/carpet5.png"
+          src="/investing.svg"
           max-height="400"
           max-width="400"
         >
@@ -178,6 +128,7 @@
     />
 
   </v-sheet>
+  </v-container>
 </template>
 
 <script>

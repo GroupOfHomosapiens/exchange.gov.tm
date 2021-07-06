@@ -4,21 +4,20 @@
     <v-navigation-drawer
       app
       v-model="drawer"
-      temporary
-      absolute      
+      temporary   
     >
       <v-list
         nav
         dense
       >
-        <v-list-item-group
-          color="primary"
-        >
+        <v-list-item-group>
           <v-list-item
             v-for="(category, i) in categories"
             :key="i"
           >
-            <v-list-item-title>{{ translate(category) }}</v-list-item-title>
+            <v-list-item-title>
+              {{ $t(category.name) }}
+            </v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -71,8 +70,37 @@
             v-for="(category, i) in categories"
             :key="i"
           >
-            {{ translate(category) }}
+            {{ $t(category.name) }}
           </v-btn>
+
+          <v-menu
+            open-on-hover
+            bottom
+            offset-y
+            transition="slide-y-transition"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                plain
+                v-bind="attrs"
+                v-on="on"
+              >
+                {{ $t('others') }}
+                <v-icon>mdi-chevron-down</v-icon>
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+                v-for="(category, i) in otherCategories"
+                :key="i"
+                :to="localePath(category.to)"
+              >
+                <v-list-item-title>
+                  {{ $t(category.name) }}
+                </v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
 
         <v-spacer></v-spacer>
@@ -114,9 +142,7 @@
     </v-app-bar>
 
     <v-main style="background-color: #eee;">
-      <v-container>
-        <router-view :key="$route.path" />
-      </v-container>
+      <router-view :key="$route.path" />
     </v-main>
 
     <v-footer
@@ -170,9 +196,9 @@
               >
                 <nuxt-link
                   class="hover mt-1"
-                  :to="category.to" 
+                  :to="localePath(category.to)"
                 >
-                  {{ translate(category) }}
+                  {{ $t(category.name) }}
                 </nuxt-link>
               </div>
             </center>
@@ -210,26 +236,16 @@ export default {
     return {
       drawer: false,
       categories: [
-        { name_tk: 'Täzelikler', name_en: 'News', name_ru: 'Новости', to: '/news' },
-        { name_tk: 'Kanunçylyk', name_en: 'Legislation', name_ru: 'Законодательство', to: '/legislation' },
-        { name_tk: 'Multimediýa', name_en: 'Multimedia', name_ru: 'Мультимедиа', to: '/multimedia' },
-        { name_tk: 'Biz barada', name_en: 'About us', name_ru: 'О нас', to: '/about' },
+        { name: 'news', to: '/news' },
+        { name: 'legislation', to: '/legislation' },
+        { name: 'multimedia', to: '/multimedia' },
       ],
-    }
-  },
-  methods: {
-    translate(obj) {
-      let lang = this.$i18n.locale;
-      if ( lang === 'en' ) {
-        return obj.name_en;
-        } else if ( lang === 'ru' ) {
-        return obj.name_ru;
-        } else {
-        return obj.name_tk;
-        }
-    },
-    changeLocale(lang) {
-      this.$router.push();
+      otherCategories: [
+        { name: 'contractsRegistration', to: '/contract' },
+        { name: 'financeMonitoring', to: '/financial-monitoring' },
+        { name: 'address', to: '/contact' },
+        { name: 'about', to: '/about' },
+      ]
     }
   }
 }
