@@ -23,7 +23,7 @@
         class="text-justify pa-1"
       >
         <h3
-          class="primary--text"
+          class="primary--text mb-5"
           align="center"
         >
           {{ $t('spectrumOfActivity') }}
@@ -39,21 +39,14 @@
       >
         <div>
         <v-img
-          src="/carpet4.png"
+          src="/investing.svg"
           max-height="400"
           max-width="400"
         >
           <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="primary"
-              ></v-progress-circular>
-            </v-row>
+            <v-skeleton-loader
+              type="image"
+            ></v-skeleton-loader>
           </template>
         </v-img>
         </div>
@@ -61,9 +54,11 @@
 
     </v-row>
 
-    <introductory-blue 
+    <introductory-blue
       :title="$t('objectiveAndTask')"
       :text="$t('aboutText3')"
+      backgroundSkew="transform: skewY(5deg);"
+      fontSkew="transform: skewY(-5deg);"
     />
 
     <introductory-blog
@@ -85,7 +80,7 @@
         justify="center"
       >
         <v-img
-          src="/investing.svg"
+          src="/electronic.svg"
           max-height="400"
           max-width="400"
         >

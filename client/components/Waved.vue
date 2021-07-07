@@ -20,6 +20,21 @@
   </section>
 </template>
 
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    list: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>
+
 <style>
   .gradient-blue {
     background-image: linear-gradient(to bottom, #D4D2FF, #fff);

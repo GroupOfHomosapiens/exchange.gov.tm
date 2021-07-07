@@ -40,20 +40,17 @@
     >
       <v-img
         :src="image"
+        min-height="300"
+        min-width="300"
         max-height="380"
         max-width="380"
       >
         <template v-slot:placeholder>
-          <v-row
-            class="fill-height ma-0"
-            align="center"
-            justify="center"
-          >
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            ></v-progress-circular>
-          </v-row>
+          <v-skeleton-loader
+            type="image"
+            min-width="250"
+            min-height="250"
+          />
         </template>
       </v-img>
     </v-col>

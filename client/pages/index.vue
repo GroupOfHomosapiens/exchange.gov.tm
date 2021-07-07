@@ -17,12 +17,18 @@
               </center>
             </h2>
             <p class="mt-10 mb-3 light-font">
-              Lorem ipsum dolor sit, amet consectetur. Autem rerum eaque sunt aliquam, quam consectetur veniam molestiae. Consectetur provident aut quam esse inventore molestias nobis facilis est enim. Nemo, nesciunt!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia possimus debitis, eum soluta dolor doloribus labore. Aperiam voluptates nonemo, ducimus, facilis id?
+              <ul>
+                <li
+                  v-for="item in items"
+                  :key="item"
+                >
+                  {{ $t(item) }}
+                </li>
+              </ul>
             </p>
 
             <button class="hover-button font-weight-medium mt-3">
-              {{ $t('contactUs') }}
+              {{ $t('about') }}
             </button>
 
           </v-col>
@@ -31,7 +37,22 @@
             sm="6"
             class="pa-2"
           >
-            <v-img src="/statistics.svg"></v-img>
+            <v-img
+              src="/statistics.svg"
+              min-height="300"
+              min-width="300"
+            >
+              <template v-slot:placeholder>
+                <v-skeleton-loader
+                  type="image"
+                  min-width="300"
+                  min-height="300"
+                  max-width="400"
+                  max-height="400"
+                  class="mx-auto mt-12"
+                />
+              </template>
+            </v-img>
           </v-col>
         </v-row>
 
@@ -43,14 +64,24 @@
           text
           class="mx-auto my-16"
         >
+          <center>
+            <h3 class="mb-3"> {{ $t('advertisement') }} </h3>
+          </center>
           <ul>
-            <li>
-              {{ $t('mainInfo1') }}
-            </li>
-            <li>
-              {{ $t('mainInfo2') }}
-            </li>
+            <li> {{ $t('mainInfo1') }} </li>
+            <li> {{ $t('mainInfo2') }} </li>
           </ul>
+          <div
+            style="border-top: 2px solid #2196f3;"
+            class="mt-3 pt-3"
+          >
+            <span> {{ $t('advertisementText') }} </span>
+            <ul class="mt-3">
+              <li> {{ $t('adv1') }}: <a href="mailto: maliye_gozegcilik@exchange.gov.tm">maliye_gozegcilik@exchange.gov.tm</a> </li>
+              <li> {{ $t('adv2') }}: <a href="mailto: hasaba_alys@exchange.gov.tm">mailto: hasaba_alys@exchange.gov.tm</a> </li>
+              <li> {{ $t('adv3') }}: <a href="mailto: baha_seljeris@exchange.gov.tm">baha_seljeris@exchange.gov.tm</a> </li>
+            </ul>
+          </div>
         </v-alert>
 
         <v-row class="my-7">
@@ -61,8 +92,22 @@
             <v-img
               class="mx-auto"
               src="/newspaper.svg"
-              max-width="350"
-            ></v-img>
+              min-width="300"
+              min-height="300"
+              max-width="400"
+              max-height="400"
+            >
+              <template v-slot:placeholder>
+                <v-skeleton-loader
+                  type="image"
+                  min-width="300"
+                  min-height="300"
+                  max-width="400"
+                  max-height="400"
+                  class="mx-auto mt-12"
+                />
+              </template>
+            </v-img>
           </v-col>
           <v-col
             cols="12"
@@ -72,7 +117,8 @@
               v-for="(item, i) in 3" 
               no-gutters 
               :key="i" 
-              class="my-1"
+              class="my-2 px-2"
+              style="border-radius: 1px; border-left: 2px solid indigo;"
             >
               <div>
                 <v-img src="/england.jpg" height="75" width="75"></v-img>
@@ -83,9 +129,8 @@
               </div>
             </v-row>
             <v-btn
-              outlined
               color="#0A146E"
-              block
+              plain
               class="mt-2"
             >
               {{ $t('readMore') }}
@@ -94,40 +139,22 @@
           </v-col>
         </v-row>
 
-        <!-- <v-row class="d-flex justify-center my-2">
-          <v-card max-width="250" v-for="item in items" :key="item" class="mx-3">
-            <v-card-title>{{ $t(item) }}</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet is simply dummy text for printing</v-card-text>
-          </v-card>
-        </v-row> -->
-        <contacts />
+        <converter class="my-5" />
+        <contacts  class="my-5"/>
+
       </v-sheet>
     </v-container>
-  <!-- <div class="mb-3 dark-blue">
-    <div style="background-color: rgba(0,0,0, .5);" class="fill-height">
-      <v-container>
-
-      <v-card
-        height="400px"
-        class="rounded-lg mt-10"
-      >
-        <div>
-          <v-img src="/dollar-euro.svg" height="50" width="50px"></v-img>
-          Compare
-        </div>
-      </v-card>
-      </v-container>
-    </div>
-  </div> -->
   </section>
 </template>
 
 <script>
 import Contacts from '@/components/Contacts.vue'
+import Converter from '@/components/Converter.vue'
 
 export default {
   components: {
     Contacts,
+    Converter,
   },
   head() {
     return {
@@ -171,6 +198,11 @@ export default {
     background-color: #0A146E;
     background-image: url('/wave2.svg');
     background-size: cover;
+    transform: scale(0.6, -0.6) rotate(25deg);
+  }
+  .outer {
+    height: 300px;
+    background-color: #0A146E;
   }
   .dark-font {
     color: #0A146E;

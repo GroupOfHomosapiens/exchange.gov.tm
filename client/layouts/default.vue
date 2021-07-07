@@ -12,7 +12,7 @@
       >
         <v-list-item-group>
           <v-list-item
-            v-for="(category, i) in categories"
+            v-for="(category, i) in allCategories"
             :key="i"
           >
             <v-list-item-title>
@@ -246,6 +246,18 @@ export default {
         { name: 'address', to: '/contact' },
         { name: 'about', to: '/about' },
       ]
+    }
+  },
+  computed: {
+    allCategories() {
+      const arr = [];
+      this.categories.forEach(item => {
+        arr.push(item);
+      });
+      this.otherCategories.forEach(item => {
+        arr.push(item)
+      });
+      return arr;
     }
   }
 }

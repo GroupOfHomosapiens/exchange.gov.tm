@@ -10,9 +10,9 @@
         image="/legislation1.png"
       />
 
-      <waved />
+      <!-- <waved /> -->
 
-      <!-- <div class="mx-n2">
+      <div class="mx-n2">
         <v-img src="/wave1.svg"></v-img>
         <div class="gradient-blue">
           <h2 class="primary--text py-5 pa-2">
@@ -99,7 +99,7 @@
             </v-col>
           </v-row>
         </div>
-      </div> -->
+      </div>
     
 
 
@@ -405,9 +405,8 @@
       <introductory-blue
         :title="$t('consularTitle')"
         :text="$t('legislation3')"
-        backgroundSkew="transform: skewY(3deg);"
-        fontSkew1="transform: skewY(-3deg);"
-        skewClass="mx-auto pa-2 text-justify mt-md-5"
+        backgroundSkew="transform: skewY(5deg);"
+        fontSkew="transform: skewY(-5deg);"
       />
       
       <div>
